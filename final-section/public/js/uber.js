@@ -68,15 +68,19 @@ function getEstimatesForUserLocation(latitude,longitude) {
 
 $("a").click(function(event){
 	// Redirect to Uber API via deep-linking to the mobile web-app
-	var uberURL = "https://m.uber.com/ul/?client_id="+uberClientId+"&action=setPickup&pickup[latitude]="+userLatitude+"&pickup[longitude]="+userLongitude+"&dropoff[latitude]="+partyLatitude+"&dropoff[longitude]="+partyLongitude;
+	var uberURL = "https://m.uber.com/ul/?client_id="+uberClientId+
+	"&action=setPickup&pickup[latitude]="+userLatitude+
+	"&pickup[longitude]="+userLongitude+
+	"&dropoff[latitude]="+partyLatitude+
+	"&dropoff[longitude]="+partyLongitude;
 
 	// Add parameters
-	uberURL += "client_id=" + uberClientId;
-	if (typeof userLatitude != typeof undefined) uberURL += "&" + "pickup_latitude=" + userLatitude;
-	if (typeof userLongitude != typeof undefined) uberURL += "&" + "pickup_longitude=" + userLongitude;
-	uberURL += "&" + "dropoff_latitude=" + partyLatitude;
-	uberURL += "&" + "dropoff_longitude=" + partyLongitude;
-	uberURL += "&" + "dropoff_nickname=" + "Thinkful";
+	// uberURL += "client_id=" + uberClientId;
+	// if (typeof userLatitude != typeof undefined) uberURL += "&" + "pickup_latitude=" + userLatitude;
+	// if (typeof userLongitude != typeof undefined) uberURL += "&" + "pickup_longitude=" + userLongitude;
+	// uberURL += "&" + "dropoff_latitude=" + partyLatitude;
+	// uberURL += "&" + "dropoff_longitude=" + partyLongitude;
+	// uberURL += "&" + "dropoff_nickname=" + "Thinkful";
 
 	// Redirect to Uber
 	window.location.href = uberURL;
