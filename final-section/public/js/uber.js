@@ -1,7 +1,7 @@
 // Uber API Constants
 // Security note: these are visible to whomever views the source code!
-var uberClientId = "YOUR_CLIENT_ID"
-	, uberServerToken = "YOUR_SERVER_TOKEN"; 
+var uberClientId = "Czy96HYTTCTVOdVxHTEXzfKLl0k2fAud"
+	, uberServerToken = "-QV7ZmFO2gAT0NYVhhGIq3dGxOHh_6ps2mAiHYrg"; 
 
 // Create variables to store latitude and longitude
 var userLatitude
