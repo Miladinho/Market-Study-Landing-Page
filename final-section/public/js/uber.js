@@ -68,7 +68,7 @@ function getEstimatesForUserLocation(latitude,longitude) {
 
 $("a").click(function(event){
 	// Redirect to Uber API via deep-linking to the mobile web-app
-	var uberURL = "https://m.uber.com/sign-up?";
+	var uberURL = "https://m.uber.com/ul/?client_id="+uberClientId+"&action=setPickup&pickup[latitude]="+userLatitude+"&pickup[longitude]="+userLongitude+"&dropoff[latitude]="+partyLatitude+"&dropoff[longitude]="+partyLongitude;
 
 	// Add parameters
 	uberURL += "client_id=" + uberClientId;
